@@ -2,27 +2,35 @@
   margin: 0;
 }
 
-header {
-  font-size: 4em;
-  font-weight: 700;
-  font-family: "JetBrainsMono", sans-serif;
-  color: #f5f5f5;
+body {
+  background-color: #f5f3f0;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.header {
   background-color: #3ec1d3;
-  padding: 0.25em 1em 0.5em 1em;
+  padding: 0.25em 1em 0.5em;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-body {
-  background-color: #f5f3f0;
+.header-logo {
+  position: relative;
 }
 
-.designSysPic {
+.header-logo>p {
+  padding: 0;
+  font-size: 4em;
+  font-weight: 700;
+  font-family: "JetBrainsMono", sans-serif;
+  color: #f5f5f5;
+}
+
+.header-logo__design {
   position: absolute;
-  margin-left: 11em;
-  margin-top: 0.5em;
+  right: -60px;
+  bottom: -30px;
 }
 
 .tabs {
@@ -34,6 +42,7 @@ body {
 .btnToggle {
   background: url(/img/Light.svg);
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .content {
@@ -48,12 +57,21 @@ body {
   padding: 0% 5% 0% 5%;
 }
 
+.description>img {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .rightSide {
   width: 40%;
   padding: 0% 5% 0% 5%;
 }
 
 button {
+  cursor: pointer;
   min-width: 180px;
   height: 40px;
   border-radius: 8px;
@@ -62,7 +80,6 @@ button {
   color: white;
   font-size: 18px;
   padding: 0 1.5rem;
-  font-family: "Montserrat Alternates", sans-serif;
   margin: 0 16px;
 }
 
@@ -86,18 +103,15 @@ button:active {
 
 h3 {
   padding-left: 0.7em;
-  font-family: "Montserrat Alternates", sans-serif;
 }
 
 p {
   color: #333333;
   padding-top: 1em;
   padding-left: 0.7em;
-  font-family: "Montserrat Alternates", sans-serif;
 }
 
 figcaption {
-  font-family: "Montserrat Alternates", sans-serif;
   font-size: 14px;
 }
 
@@ -121,7 +135,7 @@ figcaption {
   display: none;
 }
 
-.accordionHeader {
+.card {
   background-color: #fff;
   padding: 8px;
   border-radius: 16px;
@@ -131,7 +145,7 @@ figcaption {
   display: none;
 }
 
-.accordion input:checked ~ .accordionContent {
+.accordion input:checked~.accordionContent {
   display: flex;
 }
 
