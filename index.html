@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color System🟠🟣⚫🔵🟤🟡🟢⚪🔴</title>
+
+    <!-- таблица стилей со сменой темы -->
+    <link rel="stylesheet" href="css/LightTheme.css" class="themeLink"/>
+
+    <link
+      rel="stylesheet"
+      href="fonts/JetBrains/JetBrainsMono-ExtraBold.woff2"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Condiment&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+    
+  </head>
+
+  <body>
+    <script src="js/ThemeScript.js" type="text/javascript" defer></script>
+    <div class="header">
+      <header>
+        Avantys Core ❖ Rainbow
+        <img src="img/Light.svg" class="btnToggle">
+        <img src="img/DS.png" class="designSysPic" />
+      </header>
+    </div>
+
+    <div class="tabs">
+      <button>Цвета</button>
+      <button class="trp">Типографика</button>
+    </div>
+
+    <div class="content">
+      <div class="description" width = 50%>
+      <h3>Описание цветовой системы</h3>
+      <p>
+        Данная цветовая система является базовой и содержит в себе базовый
+        оранжевый цвет Уфанета в качестве базового акцентного и активного цветов
+        элементов, например кнопок.
+      </p>
+      <p>
+        Система предполагается только как дополняющий модуль к проекту, к
+        которому ее подключили, т.е. в каждом проекте задаются свои акцентные
+        цвета: Primary, Secondary, Tertriary и другие необходимые для
+        конкретного проекта цвета.
+      </p>
+      <br>
+      <img src="img/Accent.png" width = 100% alt="">
+      <p>
+        Если цвет проекта отличается от базового цвета Уфанета, то все акцентные
+        и активные цвета меняются на цвета проекта
+      </p>
+      <p>
+        При работе в Figma акцентные цвета следует заносить в библиотеку Core Rainbow, в файл Brands Colors, создать фигуру (от 1 до 3)
+        с основными цветами проекта и подписать к какому проекту относятся эти цвета, затем добавить цвета в стили в подобном виде:
+        <p align="center"><strong>
+        Brand/НазваниеБренда/Primary(secondary или tertriary)
+        </strong></p>
+      </p>
+      <figure>
+        <img src="img/BrandsColors.png" alt="" width=100%>
+        <figcaption align="center">
+          Пример отображения цвета в файле Brands Colors
+        </figcaption>
+      </figure>
+        <p>
+        При необходимости в Brands Colors можно добавить больше цветов чем Primary и др.,
+        <strong>НО</strong> в таком случае необходимо будет добавить пояснение в поле description
+        для чего необходим этот цвет здесь, это необходимо для того, чтобы избежать путаницы.
+      </p>
+      </div>
+      
+      <div class="rightSide" width = 50%>
+        <!-- Text colors-->
+        <label class="accordion">
+          <input type='checkbox' name='checkbox-accordion'>
+          <div class="accordionHeader">
+            <div class="accordionTitle chevron"><h3> Text </h3> <img src="img/chevron-up.svg"></div>
+            <p>
+            Раздел для покраски текста и их состояний: <br>Заголовки, сплошной текст, подписи, текст кнопки, ссылки
+            </p>
+          </div>
+          <div class="accordionContent colors">
+            <div class="rectangle" style="background-color: #121212"></div>
+            <div class="rectangle" style="background-color: #909499"></div>
+            <div class="rectangle" style="background-color: #333333"></div>
+            <div class="rectangle" style="background-color: #FF7707"></div>
+            <div class="rectangle" style="background-color: #005BD1"></div>
+            <div class="rectangle" style="background-color: #528FDF"></div>
+            <div class="rectangle" style="background-color: #818C99"></div>
+            <div class="rectangle" style="background-color: #F7F7F7"></div>
+            <div class="rectangle" style="background-color: #F7F7F7"></div>
+            <div class="rectangle" style="background-color: #F59800"></div>
+            <div class="rectangle" style="background-color: #FFECCC"></div>
+            <div class="rectangle" style="background-color: #B2B2B2"></div>
+            <div class="rectangle" style="background-color: #0BA75A"></div>
+            <div class="rectangle" style="background-color: #C6FBE1"></div>
+            <div class="rectangle" style="background-color: #262626"></div>
+            <div class="rectangle" style="background-color: #ED0A34"></div>
+            <div class="rectangle" style="background-color: #FDCED7"></div>
+          </div>
+        </label>
+      </div>
+    </div>
+  </body>
+</html>
