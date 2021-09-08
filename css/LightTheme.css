@@ -2,13 +2,17 @@
   margin: 0;
 }
 
+:root{
+  --blue: #3ec1d3;
+}
+
 body {
   background-color: #f5f3f0;
   font-family: "Montserrat Alternates", sans-serif;
 }
 
 .header {
-  background-color: #3ec1d3;
+  background-color: var(--blue);
   padding: 0.25em 1em 0.5em;
   display: flex;
   justify-content: space-between;
@@ -19,7 +23,7 @@ body {
   position: relative;
 }
 
-.header-logo>p {
+.header-logo > p {
   padding: 0;
   font-size: 4em;
   font-weight: 700;
